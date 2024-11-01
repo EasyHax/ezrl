@@ -1,0 +1,87 @@
+	//if ( a && g_in_game && g_ball && g_local && g_local->Actor ) {
+	//	printf( "drawing" );
+	//	g_local->Actor->DrawDebugSphere( g_ball->Location, 80, 8, 230, 10, 10, true );
+	//	//g_local->Actor->DrawDebugLine( g_ball->Location, g_local->Actor->Location, 255, 0, 0, true );
+	//	a = false;
+	//}
+
+	//local->Actor->DrawDebugSphere( ball->Location, 80, 8, 230, 10, 10, false );
+	//if ( pFunction ) {
+
+	//	//printf( "%s\n", pFunction->Name.ToString().c_str());
+
+	//	if ( !is_in_game ) {
+
+	//		if ( !should_retry ) return;
+
+	//		should_retry = false;
+	//		g_world = utils::get_world();
+
+	//		if ( !g_world ) {
+	//			print_error( "world null" );
+	//			return;
+	//		}
+
+	//		g_local = g_engine->GamePlayers[0];
+
+	//		if ( !g_local || !g_local->Actor ) {
+	//			print_error( "localplayer null" );
+	//			return;
+	//		}
+
+	//		g_worldinfo = g_local->Actor->WorldInfo;
+
+	//		if ( !g_worldinfo ) {
+	//			print_error( "worldinfo null" );
+	//			return;
+	//		}
+
+	//		g_ball = utils::get_ball( g_world );
+
+	//		if ( !g_ball ) {
+	//			print_error( "ball null" );
+	//			return;
+	//		}
+
+	//		print_information( "entering game" );
+	//		is_in_game = true;
+	//	}
+
+	//	if ( !g_ball && !g_local->Actor ) {
+	//		print_information( "leaving game" );
+	//		is_in_game = false;
+	//		return;
+	//	}
+
+	//	if ( auto target = utils::closest_target_aligned( g_local->Actor->Pawn, g_ball, g_worldinfo->PawnList ) ) {
+	//		auto steer = trajectory::proportional_navigation( g_local->Actor->Pawn, target, 0.9f );
+
+	//		if ( input::is_key_down( 'V' ) ) {
+
+	//			const float th = 0.5;
+
+	//			if ( steer > th ) { direction::to( direction::dir::right ); }
+	//			else if ( steer < -th ) { direction::to( direction::dir::left ); }
+	//			else direction::reset();
+	//		}
+	//		else { direction::reset(); }
+	//	}
+	//}
+
+	=============================================================
+
+		print_information( pFunction->GetFullName() );
+
+	if ( pFunction->GetFullName().find("GameViewportClient_TA Transient.GameEngine_TA.GameViewportClient_TA") != std::string::npos ) {
+		hook_processevent->o_fn( pFunction, pParams, pResult );
+		UCanvas_execDraw2DLine_Params Draw2DLine_Params;
+		Draw2DLine_Params.X1 = 0;
+		Draw2DLine_Params.Y1 = 0;
+		Draw2DLine_Params.X2 = 500;
+		Draw2DLine_Params.Y2 = 500;
+		Draw2DLine_Params.LineColor = { 255, 0, 255, 255 };
+		pFnDraw2DLine->FunctionFlags |= ~0x400;
+		hook_processevent->o_fn( pFnDraw2DLine, &Draw2DLine_Params, nullptr );
+		pFnDraw2DLine->FunctionFlags |= 0x400;
+		return;
+	}

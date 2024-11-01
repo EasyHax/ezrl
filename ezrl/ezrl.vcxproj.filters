@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\SDK">
+      <UniqueIdentifier>{d24cd6c4-89a4-4db3-80dc-89627d49d6a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utils">
+      <UniqueIdentifier>{cb942aea-88c2-4386-8938-d129c5d8a8a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\math">
+      <UniqueIdentifier>{5f4a7e1e-2565-41f2-9ec5-58452dd44ed6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hook">
+      <UniqueIdentifier>{029ca588-eda2-44f6-b70d-4fea9d309c73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\imgui">
+      <UniqueIdentifier>{f5d25f61-0348-4f76-8a00-32c0d0bbb1bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\features">
+      <UniqueIdentifier>{0d234967-a655-4cd5-8034-fa088222ed00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\SDK_HEADERS">
+      <UniqueIdentifier>{0f3ef941-e632-4f8b-b91d-878d1a3c9732}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>Header Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>Header Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>Header Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_dx11.cpp">
+      <Filter>Header Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_win32.cpp">
+      <Filter>Header Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>Header Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\GameDefines.cpp">
+      <Filter>Header Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK_HEADERS\AkAudio_classes.cpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK_HEADERS\Core_classes.cpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK_HEADERS\Engine_classes.cpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK_HEADERS\GFxUI_classes.cpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK_HEADERS\IpDrv_classes.cpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK_HEADERS\OnlineSubsystemEOS_classes.cpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK_HEADERS\ProjectX_classes.cpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK_HEADERS\TAGame_classes.cpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK_HEADERS\WinDrv_classes.cpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK_HEADERS\XAudio2_classes.cpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utils\console.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\memory.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\utils.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\input.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="math\fvector.hpp">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_dx11.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_win32.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_rectpack.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_textedit.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_truetype.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="hook\present.hpp">
+      <Filter>Header Files\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="hook\process_event.hpp">
+      <Filter>Header Files\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="math\math.hpp">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\render.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="hook\hook_engine.hpp">
+      <Filter>Header Files\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="features\autodemo.hpp">
+      <Filter>Header Files\features</Filter>
+    </ClInclude>
+    <ClInclude Include="features\prediction.hpp">
+      <Filter>Header Files\features</Filter>
+    </ClInclude>
+    <ClInclude Include="features\chat.hpp">
+      <Filter>Header Files\features</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\GameDefines.hpp">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SdkHeaders.hpp">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\AkAudio_classes.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\AkAudio_parameters.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\AkAudio_structs.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\Core_classes.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\Core_parameters.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\Core_structs.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\Engine_classes.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\Engine_parameters.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\Engine_structs.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\GFxUI_classes.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\GFxUI_parameters.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\GFxUI_structs.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\IpDrv_classes.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\IpDrv_parameters.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\IpDrv_structs.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\OnlineSubsystemEOS_classes.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\OnlineSubsystemEOS_parameters.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\OnlineSubsystemEOS_structs.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\ProjectX_classes.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\ProjectX_parameters.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\ProjectX_structs.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\TAGame_classes.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\TAGame_parameters.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\TAGame_structs.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\WinDrv_classes.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\WinDrv_parameters.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\WinDrv_structs.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\XAudio2_classes.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\XAudio2_parameters.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK_HEADERS\XAudio2_structs.hpp">
+      <Filter>Header Files\SDK\SDK_HEADERS</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
