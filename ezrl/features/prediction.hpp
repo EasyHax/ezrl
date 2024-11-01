@@ -13,7 +13,6 @@ namespace prediction {
 	uint8_t predict_count = 0;
 
 	inline void calculate() {
-
 		if ( !g_ball || g_ball->bDeleteMe ) {
 			return;
 		}

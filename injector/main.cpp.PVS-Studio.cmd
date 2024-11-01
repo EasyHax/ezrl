@@ -1,1 +1,0 @@
-@call "D:\Programme\PVS-Studio\x64\PVS-Studio.exe" --cfg "C:\Users\ezhax\Desktop\ezrl\injector\main.cpp.PVS-Studio.cfg"
