@@ -24,11 +24,10 @@ namespace utils {
 
 	bool initialize_sdk( void ) {
 
-		auto gnames = memory::pattern_scan( "48 89 05 ? ? ? ? 89 5C 24 60", 0 );
+		auto gnames = memory::pattern_scan( "48 8B 0D ? ? ? ? 48 63 C3", 0 );
 		if ( !gnames )
 			return false;
 
-		//gnames += *(int32_t*)gnames + 4 + 47;
 		gnames += *(int32_t*)( gnames + 3 ) + 7;
 		if ( !gnames )
 			return false;
@@ -37,7 +36,6 @@ namespace utils {
 		if ( !gobjects )
 			return false;
 
-		//gobjects += *(int32_t*)gobjects + 4 + 101;
 		gobjects += *(int32_t*)( gobjects + 3 ) + 7;
 		if ( !gobjects )
 			return false;
